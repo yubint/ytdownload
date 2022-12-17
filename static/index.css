@@ -1,0 +1,76 @@
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    padding-top: 10vh;
+    z-index: 1;
+    background-color: white;
+}
+
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
+.header-link:hover {
+    color: black;
+}
+
+.form-control {
+    width: 40%;
+}
+
+.btn {
+    display: inline-block;
+    align-self: center;
+}
+
+.form {
+    display: inline;
+    width: auto;
+}
+
+.spinner-submit {
+    position: relative;
+    top: 9px;
+}
+
+.download-button {
+    position: relative;
+    bottom: 31px;
+}
+
+.quality-select {
+    position: relative;
+    bottom: 29px;
+}
+
+.spinner-download {
+    position: relative;
+    bottom: 21px;
+}
+
+.half-border {
+    width: 50%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    transform: translate(50%);
+}
+
+.videos {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 50%;
+    border-top-width: 0px;
+    padding-top: 5vh;
+}
+
+
+#error {
+    text-align: center;
+    color: #fe0f00;
+    font-size: 2rem;
+}
