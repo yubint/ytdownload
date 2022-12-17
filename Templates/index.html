@@ -11,30 +11,36 @@
 
     <title>ytdownload</title>
 
-    <link rel="stylesheet" src="/static/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="/static/index.css" rel="stylesheet">
 
     <script defer src="{% static 'index.js' %}"></script>
 
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>
-            <div align="center">
-                Ytdownload
+            <div class="mb-3" align="center">
+                <span><a class='header-link' href="/">Ytdownload</a></span>
             </div>
         </h1>
-    </header>
-    <main>
         <div align="center">
-            <form action="javascript:workaround();" class="url-form">
-                <input autocomplete="off" autofocus id="url" name="url" placeholder="Enter the url" required type="url">
-                <button type="submit">Submit</button>
+            <form action="javascript:workaround();">
+                <input class='form-control mb-3' autocomplete="off" autofocus id="url" name="url"
+                    placeholder="Enter the url" required type="url">
+                <button class="btn btn-primary" id="url-submit" type="submit">Submit</button>
+                <div class="spinner-border mx-3 spinner-submit" hidden role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </form>
         </div>
-        <div class="" id="videos">
+        <div id="error"></div>
+        <div class="half-border" hidden></div>
+    </header>
+    <main class="videos mx-auto mb-5" id="main" hidden>
+        <div class="mx-auto" id="videos" align="center">
         </div>
     </main>
 </body>
